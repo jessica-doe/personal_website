@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Merienda");
+
+.footer {
+  color: #BCB8B1;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-family: 'Merienda', sans-serif;
+  font-size: 0.6em;
+  font-style: italic;
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+  font-family: system-ui, Roboto;
+}
+.header {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  background-color: #F4F3EE;
+  font-family: system-ui;
+}
+.nav {
+  text-align: right;
+  font-size: 1rem;
+  padding-left: 5px;
+  padding-right: 15px;
+  margin-top: 15px;
+  background-color: #F4F3EE;
+}
+
+.git-img{
+  float: right;
+  width: 32px;
+  height: 32px;
+  margin-top: 3px;
+  padding-right: 15px;
+  padding-left: 0px;
+}
+.linked-img {
+  float: right;
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  display: inline-block;
+  padding: 13px 13px;
+  color: #463F3A;
+  margin-right: 5px;
+}
+
+.nav-link:hover {
+  border-radius: 7px 7px 7px 7px;
+  text-decoration:none;
+  background-color: #F4F3EE;
+  border-bottom: 2px solid #BCB8B1
+}
+.nav-link.current {
+  border-bottom: 2px solid #E0AFA0;
+}
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    font-size: 1.1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .nav-link {
+    padding: 14px 21px;
+  }
+}
