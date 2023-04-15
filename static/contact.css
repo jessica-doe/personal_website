@@ -36,27 +36,6 @@
   font-family: system-ui;
   text-align: center;
 }
-.sent-flash{
-  font-size: 1rem;
-  color: #092A36;
-  font-family: system-ui;
-  text-align: center;
-  padding-top: 25px;
-  padding-bottom: 0px;
-  padding-right: 100px;
-}
-.sent-flash:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.close-sent-flash{
-  text-align: right;
-  font-size: 1rem;
-  padding-left: 5px;
-  padding-right: 15px;
-  margin-top: 15px;
-}
 .name-email{
   padding-top: 20px;
   padding-right: 100px;

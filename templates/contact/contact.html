@@ -42,13 +42,6 @@ CONTACT BODY
         </div>
     </div>
     <div class="ct-column-40">
-        {% for message in get_flashed_messages() %}
-        <div class="sent-flash">
-            {{ message }}
-            <button type="button" class="close-sent-flash" data-dismiss="alert">&times;</button>
-        </div>
-        {% endfor %}
-
         <div class="name-email">
             <div class="ct-column-50">
                 <div class="name">
@@ -71,8 +64,19 @@ CONTACT BODY
             {{ form.message.label }}
             {{ form.message(placeholder='...') }}
         </div>
-        <div class="submit">
+        <div class="submit" onclick="myFunction()">
             {{ form.submit }}
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+            <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'></link>
+            <script>
+                function myFunction(){
+                    swal({
+                      title: "Message Sent!",
+                      confirmButtonColor: '#FFCB77',
+                      position: "top"
+                    });
+                }
+            </script>
         </div>
     </div>
     </form>

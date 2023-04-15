@@ -52,7 +52,7 @@ def contact():
                    f"Email: {email} \n\n" \
                    f"{message}"
         mail.send(msg)
-        flash("Message Sent!")
+        return redirect(url_for('contact'))
     return render_template('contact/contact.html', form=form)
 
 
