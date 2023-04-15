@@ -9,16 +9,18 @@ HEADER
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jess Doe</title>
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='header.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='contact.css') }}">
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='footer.css') }}">
   </head>
   <body class="header">
     <nav class="nav">
-      <a href="/" class="nav-link">About</a>
-      <a href="/experience" class="nav-link">Work Experience</a>
-      <a href="/portfolio" class="nav-link">Portfolio</a>
+      <a><img src="static/personal_logo.png" class="logo-img" alt="logo"></a>
+      <a href="https://github.com/jessica-doe" target="_blank"><img src="static/github.png" onmouseover="this.src='static/github_hover.png';" onmouseout="this.src='static/github.png';" class="git-img" alt="logo"></a>
+      <a href="https://www.linkedin.com/in/jessica-doe/" target="_blank"><img src="static/linkedin.png" onmouseover="this.src='static/linkedin_hover.png';" onmouseout="this.src='static/linkedin.png';" class="linked-img" alt="logo"></a>
       <a href="/contact" class="nav-link">Contact</a>
-      <a href="https://github.com/jessica-doe" target="_blank"><img src="static/github.png" class="git-img" alt="logo"></a>
-      <a href="https://www.linkedin.com/in/jessica-doe/" target="_blank"><img src="static/linkedin.png" class="linked-img" alt="logo"></a>
+      <a href="/portfolio" class="nav-link">Portfolio</a>
+      <a href="/experience" class="nav-link">Work Experience</a>
+      <a href="/" class="nav-link">About</a>
     </nav>
     <script type = "text/javascript"
          src = "{{ url_for('static', filename = 'header.js') }}" ></script>
@@ -27,6 +29,7 @@ HEADER
 <!-- ==============================================================================================================
 ABOUT BODY
 ============================================================================================================== -->
+
 
 
 <!-- ==============================================================================================================

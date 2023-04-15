@@ -14,12 +14,13 @@ HEADER
   </head>
   <body class="header">
     <nav class="nav">
-      <a href="/" class="nav-link">About</a>
-      <a href="/experience" class="nav-link">Work Experience</a>
-      <a href="/portfolio" class="nav-link">Portfolio</a>
-      <a href="/contact" class="nav-link">Contact</a>
-      <a href="https://github.com/jessica-doe" target="_blank"><img src="static/github.png" class="git-img" alt="logo"></a>
-      <a href="https://www.linkedin.com/in/jessica-doe/" target="_blank"><img src="static/linkedin.png" class="linked-img" alt="logo"></a>
+      <a><img src="static/personal_logo.png" class="logo-img" alt="logo"></a>
+        <a href="https://github.com/jessica-doe" target="_blank"><img src="static/github.png" onmouseover="this.src='static/github_hover.png';" onmouseout="this.src='static/github.png';" class="git-img" alt="logo"></a>
+        <a href="https://www.linkedin.com/in/jessica-doe/" target="_blank"><img src="static/linkedin.png" onmouseover="this.src='static/linkedin_hover.png';" onmouseout="this.src='static/linkedin.png';" class="linked-img" alt="logo"></a>
+        <a href="/contact" class="nav-link">Contact</a>
+        <a href="/portfolio" class="nav-link">Portfolio</a>
+        <a href="/experience" class="nav-link">Work Experience</a>
+        <a href="/" class="nav-link">About</a>
     </nav>
     <script type = "text/javascript"
          src = "{{ url_for('static', filename = 'header.js') }}" ></script>
@@ -32,11 +33,22 @@ CONTACT BODY
 <div class="ct-row">
     <form action="{{ url_for('contact') }}" method=post>
     <div class="ct-column-50">
+        <div class="ct-description-title">
+            Contact Me
+        </div>
         <div class="ct-description">
-            Please reach out about anything! Whether it be to ask a question, if you have a suggestion, about an opportunity, or anything else that may come to mind! Cheers.
+            I'm always looking to chat, learn, explore, grow. <br>
+            Cheers.
         </div>
     </div>
     <div class="ct-column-40">
+        {% for message in get_flashed_messages() %}
+        <div class="sent-flash">
+            {{ message }}
+            <button type="button" class="close-sent-flash" data-dismiss="alert">&times;</button>
+        </div>
+        {% endfor %}
+
         <div class="name-email">
             <div class="ct-column-50">
                 <div class="name">

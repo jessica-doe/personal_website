@@ -18,17 +18,47 @@
   clear: both;
 }
 
-.ct-description{
+.ct-description-title{
   padding-top: 100px;
   padding-left: 250px;
   padding-right: 100px;
-  font-size: 1.3rem;
-  color: #8A817C;
+  font-size: 2rem;
+  color: #092A36;
   font-family: system-ui;
   text-align: center;
 }
+.ct-description{
+  padding-top: 5px;
+  padding-left: 250px;
+  padding-right: 100px;
+  font-size: 1.3rem;
+  color: #092A36;
+  font-family: system-ui;
+  text-align: center;
+}
+.sent-flash{
+  font-size: 1rem;
+  color: #092A36;
+  font-family: system-ui;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 0px;
+  padding-right: 100px;
+}
+.sent-flash:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.close-sent-flash{
+  text-align: right;
+  font-size: 1rem;
+  padding-left: 5px;
+  padding-right: 15px;
+  margin-top: 15px;
+}
 .name-email{
-  padding-top: 50px;
+  padding-top: 20px;
   padding-right: 100px;
 }
 .name-email:after {
@@ -64,25 +94,25 @@
 
 form label {
   font-size: 1.3rem;
-  font-color: #463F3A;
+  font-color: #092A36;
   font-family: system-ui;
 }
 form textarea{
-  background-color: #F4F3EE;
+  background-color: #FEF9EF;
   width: 100%;
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 2px solid #463F3A;
+  border-bottom: 2px solid #227C9D;
   font-size: 1.1rem;
   resize: none;
   outline: none;
   padding-top: 10px;
   font-family: Roboto;
-  color: #8A817C;
+  color: #092A36;
 }
 textarea::placeholder{
-  color: #E0AFA0;
+  color: #092A36;
 }
 form textarea#name,
 form textarea#email,
@@ -101,12 +131,12 @@ textarea::-webkit-scrollbar-track {
 }
 textarea::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: #BCB8B1;
+    background-color: #227C9D;
 }
 
 form input#submit {
-  background-color: #E0AFA0;
-  color: #463F3A;
+  background-color: #FFCB77;
+  color: #092A36;
   border: none;
   width: 100%;
   height: 45px;
@@ -116,5 +146,5 @@ form input#submit {
 }
 form input#submit:hover{
   cursor: pointer;
-  background-color: #BCB8B1;
+  background-color: #227C9D;
 }

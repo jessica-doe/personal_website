@@ -1,11 +1,17 @@
-from flask import Flask, redirect, url_for, render_template, request, make_response
+from flask import Flask, redirect, url_for, render_template, request, make_response, flash
 from flask_wtf import FlaskForm
+from flask_mail import Mail, Message
 from wtforms import TextAreaField, BooleanField, TextAreaField, SubmitField
-import pandas as pd
 
 
 app = Flask(__name__)
 app.secret_key = 'secretKey'
+app.config['MAIL_SERVER']='smtp.gmail.com'
+app.config['MAIL_PORT'] = 465
+app.config['MAIL_USERNAME'] = 'jessicaldoe@gmail.com'
+app.config['MAIL_PASSWORD'] = 'komocnxwuhnnmqkv'
+app.config['MAIL_USE_TLS'] = False
+app.config['MAIL_USE_SSL'] = True
 
 
 class ContactForm(FlaskForm):
@@ -18,17 +24,17 @@ class ContactForm(FlaskForm):
 
 @app.route("/")
 def about():
-    return render_template("about/index.html")
+    return render_template("about/about.html")
 
 
 @app.route("/experience")
 def experience():  # binding to hello_admin call
-    return "Experiences"
+    return render_template("experience/experience.html")
 
 
 @app.route("/portfolio")
 def portfolio():
-    return 'Portfolio!'
+    return render_template("portfolio/portfolio.html")
 
 
 @app.route('/contact', methods=["GET", "POST"])
@@ -39,12 +45,15 @@ def contact():
         email = request.form["email"]
         subject = request.form["subject"]
         message = request.form["message"]
-        res = pd.DataFrame({'name': name, 'email': email, 'subject': subject,'message': message}, index=[0])
-        res.to_csv('contactusMessage.csv')
-        print("The data are saved !")
-        return redirect("/")
-    else:
-        return render_template('contact/index.html', form=form)
+        mail = Mail(app)
+        msg = Message(subject, sender='jessicaldoe@gmail.com', recipients=['jldoe@uwaterloo.ca'])
+        msg.body = f"CONTACT FORM FILLED FROM PERSONAL WEBSITE! \n\n" \
+                   f"From: {name} \n" \
+                   f"Email: {email} \n\n" \
+                   f"{message}"
+        mail.send(msg)
+        flash("Message Sent!")
+    return render_template('contact/contact.html', form=form)
 
 
 if __name__ == '__main__':
