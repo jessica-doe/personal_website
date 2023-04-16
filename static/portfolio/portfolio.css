@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*================================================================================
+CARDS LAYOUT
+=================================================================================*/
+.portfolio-body{
+  padding-top: 45px;
+}
+.card-row{
+  padding-top: 30px;
+}
+.card-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card-column{
+    float: left;
+    width: 50%;
+}
+.card-wrapper{
+    text-decoration: none;
+    display: inline-block;
+}
+.card-left-main,
+.card-right-main{
+    border: 5px solid #FFCB77;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 7px 10px #E2DED5;
+    height: 300px;
+    width: 565px;
+    display: block;
+}
+.card-left-hover,
+.card-right-hover{
+    border: 5px solid #227C9D;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 7px 10px #E2DED5;
+    height: 300px;
+    width: 565px;
+    display: none;
+}
+.card-left-main,
+.card-left-hover{
+    margin-left: 40px;
+}
+.card-right-main,
+.card-right-hover{
+    margin-right: 40px;
+}
+.card-wrapper:hover .card-left-main {
+  display: none;
+}
+.card-wrapper:hover .card-left-hover {
+  display: block;
+}
+.card-wrapper:hover .card-right-main {
+  display: none;
+}
+.card-wrapper:hover .card-right-hover {
+  display: block;
+}
+
+/*================================================================================
+CARD STYLE
+=================================================================================*/
+.card-image{
+    width=33%
+}
+.card-contents{
+    width=67%;
+}
+.card-title{
+    margin-top: 15px;
+    color: #227C9D;
+    font-size: 1.5rem;
+    font-weight: bold;
+    float: left;
+    width: 67%;
+}
+.card-description{
+    color: #092A36;
+    float: left;
+    padding-top: 5px;
+    width: 67%;
+}
+.skills-bar-100{
+    margin-top: 5px;
+    background: rgba(23, 195, 178, 0.4);
+    border-radius: 10px 10px 10px 10px;
+    width: 95%;
+    height: 25px;
+}
+.skills-bar-75{
+    margin-top: 5px;
+    background: rgba(23, 195, 178, 0.4);
+    border-radius: 10px 10px 10px 10px;
+    width: 75%;
+    height: 25px;
+}
+.skills-bar-50{
+    margin-top: 5px;
+    background: rgba(255, 203, 119, 0.4);
+    border-radius: 10px 10px 10px 10px;
+    width: 50%;
+    height: 25px;
+}
+.skills-bar-30{
+    margin-top: 5px;
+    background: rgba(254, 109, 115, 0.4);
+    border-radius: 10px 10px 10px 10px;
+    width: 30%;
+    height: 25px;
+}
+.skills-text{
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+/*================================================================================
+LumiNode Observer
+=================================================================================*/
+.observer-img{
+  float: left;
+  width: 164px;
+  height: 250px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/*================================================================================
+Tiberius
+=================================================================================*/
+.tiberius-img{
+  float: left;
+  width: 164px;
+  height: 150px;
+  margin-top: 75px;
+  margin-bottom: 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.tiberius-img-2{
+  float: left;
+  width: 164px;
+  height: 250px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+}

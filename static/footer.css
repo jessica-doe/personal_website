@@ -2,9 +2,10 @@
 
 .footer {
   color: #092A36;
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
+  padding-top: 30px;
   padding-left: 20px;
   padding-bottom: 10px;
   font-family: 'Merienda', sans-serif;

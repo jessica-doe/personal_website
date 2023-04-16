@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ==============================================================================================================
+HEADER
+============================================================================================================== -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jess Doe</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='header.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='portfolio.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='footer.css') }}">
+  </head>
+  <body class="header">
+    <nav class="nav">
+      <a><img src="static/personal_logo.png" class="logo-img" alt="logo"></a>
+      <a href="https://github.com/jessica-doe" target="_blank"><img src="static/github.png" onmouseover="this.src='static/github_hover.png';" onmouseout="this.src='static/github.png';" class="git-img" alt="logo"></a>
+      <a href="https://www.linkedin.com/in/jessica-doe/" target="_blank"><img src="static/linkedin.png" onmouseover="this.src='static/linkedin_hover.png';" onmouseout="this.src='static/linkedin.png';" class="linked-img" alt="logo"></a>
+      <a href="/contact" class="nav-link">Contact</a>
+      <a href="/portfolio" class="nav-link">Portfolio</a>
+      <a href="/experience" class="nav-link">Work Experience</a>
+      <a href="/" class="nav-link">About</a>
+    </nav>
+    <script type = "text/javascript"
+         src = "{{ url_for('static', filename = 'header.js') }}" ></script>
+  </body>
+
+<!-- ==============================================================================================================
+LUMINODE_OBSERVER BODY
+============================================================================================================== -->
+
+
+<!-- ==============================================================================================================
+FOOTER
+============================================================================================================== -->
+<footer class="footer">
+    website designed by Jessica Doe, developed using Python's Flask, HTML/CSS, and JS | 2023
+</footer>
+
+</html>

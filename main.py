@@ -22,6 +22,11 @@ class ContactForm(FlaskForm):
     submit = SubmitField("Send")
 
 
+"""=====================================================================================
+NAVBAR LINKS
+======================================================================================"""
+
+
 @app.route("/")
 def about():
     return render_template("about/about.html")
@@ -54,6 +59,20 @@ def contact():
         mail.send(msg)
         return redirect(url_for('contact'))
     return render_template('contact/contact.html', form=form)
+
+
+"""==========================================================================================
+Portfolio Links
+=========================================================================================="""
+
+
+@app.route("/portfolio/luminode_observer")
+def portfolio_luminode_observer():
+    return render_template("portfolio/projects/luminode_observer.html")
+
+@app.route("/portfolio/tiberius")
+def portfolio_tiberius():
+    return render_template("portfolio/projects/luminode_observer.html")
 
 
 if __name__ == '__main__':
