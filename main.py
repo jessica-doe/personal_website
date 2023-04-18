@@ -74,6 +74,14 @@ def portfolio_luminode_observer():
 def portfolio_tiberius():
     return render_template("portfolio/projects/luminode_observer.html")
 
+@app.route("/portfolio/trixie")
+def portfolio_trixie():
+    return render_template("portfolio/projects/luminode_observer.html")
+
+@app.route("/portfolio/artemisvr")
+def portfolio_artemis():
+    return render_template("portfolio/projects/luminode_observer.html")
+
 
 if __name__ == '__main__':
     app.run(debug=True)

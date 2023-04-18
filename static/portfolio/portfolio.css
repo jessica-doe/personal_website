@@ -117,6 +117,14 @@ CARD STYLE
     font-weight: bold;
 }
 
+.be-img{
+  float: left;
+  width: 25px;
+  height: 20px;
+  padding-right: 5px;
+  padding-top: 7px;
+}
+
 /*================================================================================
 LumiNode Observer
 =================================================================================*/
@@ -128,13 +136,6 @@ LumiNode Observer
   margin-bottom: 25px;
   padding-right: 10px;
   padding-left: 10px;
-}
-.be-img{
-  float: left;
-  width: 25px;
-  height: 20px;
-  padding-right: 5px;
-  padding-top: 7px;
 }
 
 /*================================================================================
@@ -150,6 +151,50 @@ Tiberius
   padding-left: 10px;
 }
 .tiberius-img-2{
+  float: left;
+  width: 164px;
+  height: 250px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/*================================================================================
+Trixie
+=================================================================================*/
+.trixie-img{
+  float: left;
+  width: 164px;
+  height: 150px;
+  margin-top: 75px;
+  margin-bottom: 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.trixie-img-2{
+  float: left;
+  width: 164px;
+  height: 250px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/*================================================================================
+ARTEMISVR
+=================================================================================*/
+.artemis-img{
+  float: left;
+  width: 164px;
+  height: 150px;
+  margin-top: 75px;
+  margin-bottom: 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.artemis-img-2{
   float: left;
   width: 164px;
   height: 250px;
