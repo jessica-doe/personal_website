@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Macondo');
+
+.header-container{
+    position: fixed;
+    width: 79%;
+    height: 15vh;
+    border: 1px solid #9D8967;
+    background-color: #202020;
+}
+
+.header-logo-container{
+    float: left;
+    width: 50%;
+    height: 100%
+}
+.header-logo-content-container{
+    height: 100%;
+    border: 1px solid #3C4567;
+}
+.header-logo-content{
+    height: 100%;
+    color: #3C4567;
+    font-size: 12vh;
+    font-family: Macondo;
+    border: 1px solid #9E4532;
+    text-decoration:none;
+}
+
+.header-buttons-container{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.header-button-container {
+    height: 6vh;
+    padding-top: 5vh;
+    padding-bottom: 4vh;
+    border: 1px solid #3C4532;
+    float: right;
+    padding-left: 4%;
+}
+.header-button-content {
+    color: #D6D6D6;
+    text-decoration: none;
+    border: 1px solid #9E4532;
+}
+.header-button-content:hover {
+  color: #3C4567;
+}

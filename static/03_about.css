@@ -1,0 +1,16 @@
+.about-container{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #9D8967;
+}
+
+.about-left-container{
+    float: left;
+    width: 60%;
+    height: 100%;
+}
+.about-right-container{
+    float: left;
+    width: 40%;
+    height: 100%;
+}

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass_Mono');
+
+html {
+    font-family: Overpass_Mono;
+    background-color: #202020;
+    color: #D6D6D6;
+    font-size: 4vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.section-container{
+    padding-top: 17vh;
+    height: 80vh;
+    scroll-snap-align: start;
+    scroll-padding-top: 17vh;
+}
