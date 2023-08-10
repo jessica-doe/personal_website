@@ -9,6 +9,7 @@ html {
     padding-right: 10%;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
 
 .section-container{
