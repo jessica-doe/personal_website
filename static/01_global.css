@@ -2,7 +2,7 @@
 
 html {
     font-family: Overpass_Mono;
-    background-color: #202020;
+    background-image: linear-gradient(to right, #202020, #222740, #202020);
     color: #D6D6D6;
     font-size: 4vh;
     padding-left: 10%;
